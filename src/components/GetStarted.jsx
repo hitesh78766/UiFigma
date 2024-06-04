@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 
 const GetStarted = () => {
+
+  
   return (
     <div
       className="modal fade"
