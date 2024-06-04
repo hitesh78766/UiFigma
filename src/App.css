@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.figma-img {
+  height: 40px;
+  width: 26px;
+}
+
+ul li {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn-get-started {
+  background-color: #000000;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-2px);
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000;
+  transition: width 0.2s ease, right 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.heading-main {
+  font-size: 4.5rem;
+}
+
+
+/* Modal css */
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+
+.btn-close:hover {
+  color: #007bff;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #000;
+}
+
+.btn-google {
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn-google img {
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-check-label {
+  margin-left: 1rem;
+  font-size: 16px;
+  color: #000000e5;
+  font-weight: 500;
+}
+
+.form-check-input {
+  border: 2px solid #000;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.create-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.pehra {
+  font-size: 11px;
+}
+
+.single-sign {
+  font-size: 16px;
+}
+
+.single-sign a:hover {
+  text-decoration: underline;
+}
+
+.single-sign a {
+  text-decoration: none;
+}
+
+/* Reset Page css */
+.reset-header {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.reset-btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+  border-color: #2c2c2c;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 10px 0px;
+}
+
+.modal-body {
+  background-color: #ffffff;
+  padding: 2rem;
+}
