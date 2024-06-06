@@ -65,13 +65,26 @@ ul li {
 
 /* Modal css */
 
-.modal-content {
-  border-radius: 10px;
-  overflow: hidden;
-}
+
 
 .modal-header {
   border-bottom: none;
+}
+
+.modal-dialog {
+  max-width: 430px; 
+  margin: 0 auto; 
+  display: flex;
+  align-items: center; 
+  min-height: calc(100% - 3.5rem);
+}
+
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%; 
+
 }
 
 .modal-body {
@@ -109,14 +122,6 @@ ul li {
 
 .text-center {
   text-align: center;
-}
-
-.mt-4 {
-  margin-top: 1.5rem;
-}
-
-.mt-3 {
-  margin-top: 1rem;
 }
 
 .form-check {
@@ -164,21 +169,46 @@ ul li {
   text-decoration: none;
 }
 
+.color
+{
+  color: #007be5;
+  font-weight: 600;
+}
+
 /* Reset Page css */
 
-.reset-header {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 125%;
+
+
+.modal-content {
+  border-radius: 15px;
+ 
 }
 
-.reset-btn {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #FFFFFF;
-  border-color: #2c2c2c;
+.modal-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#emailInput {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
   border: none;
-  font-weight: 700;
-  border-radius: 8px;
-  padding: 10px 0px;
+  border-radius: 5px;
 }
 
+.btn-primary:disabled {
+  background-color: #c0c0c0;
+}
+
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
