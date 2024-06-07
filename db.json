@@ -1,13 +1,8 @@
 {
   "users": [
     {
-      "id": "d8d9",
+      "id": "f320",
       "email": "hitesh@gmail.com",
-      "password": "12345678"
-    },
-    {
-      "id": "e16a",
-      "email": "hitesh@gmail.com123",
       "password": "12345"
     }
   ]

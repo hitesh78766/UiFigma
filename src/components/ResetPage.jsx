@@ -23,6 +23,7 @@ const ResetPage = () => {
     if (data.success) {
       setResult("Form Submitted Successfully...");
       event.target.reset();
+      setEmail("");
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -31,6 +32,7 @@ const ResetPage = () => {
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
+    setResult("");
   };
 
   return (
@@ -95,6 +97,13 @@ const ResetPage = () => {
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
   );
 };
 
