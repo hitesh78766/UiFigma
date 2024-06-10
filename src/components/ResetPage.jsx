@@ -1,23 +1,29 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 
-
 const ResetPage = () => {
   const [result, setResult] = useState("");
   const [email, setEmail] = useState("");
+
+  const generateOTP = () => {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+  };
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
+    const sixDigitCode = generateOTP();
     formData.append("access_key", "3ea7d6cb-7b85-4538-b1be-5a1f97777d98");
+    formData.append("message", `The OTP is to reset the password: ${sixDigitCode}`);
 
     const response = await axios.post("https://api.web3forms.com/submit", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
     });
+
     const data = response.data;
 
     if (data.success) {
@@ -59,9 +65,10 @@ const ResetPage = () => {
                 Enter Your Email To <br /> Reset Password
               </h5>
             </div>
+
             <form onSubmit={onSubmit}>
               <div className="">
-              <span className={`${result.includes("Successfully") ? 'text-success' : 'text-danger'}`}>{result}</span>
+                <span className={`${result.includes("Successfully") ? 'text-success' : 'text-danger'}`}>{result}</span>
                 <div className="d-flex align-items-center justify-content-center mt-3">
                   <input
                     type="email"
@@ -89,21 +96,12 @@ const ResetPage = () => {
                   </p>
                 </div>
               </div>
-              {/* <div className="text-center">
-                <span className={`mt-3 ${result.includes("Successfully") ? 'text-success' : 'text-danger'}`}>{result}</span>
-              </div> */}
             </form>
+
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
   );
 };
 

@@ -97,7 +97,7 @@ const Header = () => {
 
       <div className="container">
         <h1 className="heading-main">
-          How you <b style={{ color: colors[colorIndex] }}>design </b>, <b style={{ color: colors[(colorIndex + 1) % colors.length] }}>align</b>, and <b style={{ color: colors[(colorIndex + 2) % colors.length] }}>build</b> matters. Do it together with Figma.
+          How you <b style={{ color: colors[colorIndex] }}>design</b>, <b style={{ color: colors[(colorIndex + 1) % colors.length] }}>align</b>, and <b style={{ color: colors[(colorIndex + 2) % colors.length] }}>build</b> matters. Do it together with Figma.
         </h1>
       </div>
     </header>

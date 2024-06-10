@@ -33,7 +33,7 @@ function LoginForm() {
         setSuccessMessage('');
       }
     } catch (error) {
-      console.error('Failed to log in:', error);
+      // console.error('Failed to log in:', error);
       setErrorMessage('Failed to log in. Please try again.');
       setSuccessMessage('');
     }
